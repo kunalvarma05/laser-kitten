@@ -1,0 +1,59 @@
+.collections-list {
+    top: 50px !important;
+}
+
+.collections {
+    // padding-top: 50px;
+
+    .collection-preview {
+        height: 125px;
+    }
+}
+
+.collection-filters {
+    background-color: @white;
+    border-bottom: 1px solid #dbdbdb;
+    height: 50px;
+    // should switch to this on scroll
+    // box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+
+    ul {
+        display: inline-block;
+        li {
+
+            &.active a {
+                color: @orange;
+                background-color: transparent;
+
+                &:hover, &:visited, &:active, &:focus {
+                    color: @orange;
+                    background-color: transparent;                        
+                }
+            }
+            a {
+                color: #575757;
+                text-transform: uppercase;
+
+                &:hover, &:visited, &:active, &:focus {
+                    color: @orange;
+                    background-color: transparent;                        
+                }
+            }
+        }
+    }
+}
+
+
+.collection-item {
+    display: block;
+    margin-bottom: 45px;
+    color: @darkgrey;
+
+    .collection-preview {
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+}

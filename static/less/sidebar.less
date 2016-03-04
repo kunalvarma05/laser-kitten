@@ -1,0 +1,38 @@
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    background-color: @darkblue;
+    z-index: 2;
+
+    .nav {
+        text-align: center;
+        margin-top: 10px;
+
+        a {
+            background-color: @darkblue;
+            color: @lightblue;
+
+            &:link {
+                background-color: @darkblue;
+            }
+
+            &:hover, &:active, &:visited {
+                background-color: @darkblue;
+                color: @orange;
+            }
+
+            &.active {
+                background-color: @darkblue;
+                color: @orange;
+            }
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }    
+}

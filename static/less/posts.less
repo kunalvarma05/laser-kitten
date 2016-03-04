@@ -1,0 +1,63 @@
+
+.posts-list {
+    top: 46px !important;
+}
+
+// ALL DA POSTS
+.posts {
+
+    .post-preview {
+
+        position: relative;
+        display: block;
+        padding: 25px 0;   
+        color: @darkgrey;
+
+        &:hover {
+            background-color: #f1f1f1;
+            text-decoration: none;
+        }
+
+        a {
+            color: @darkgrey;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .preview-user-thumbnail {
+            position: absolute; 
+            top: 25px;
+            left: 15px;
+            width: 55px;
+            height: 55px;
+        }
+
+        .vote-box {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .preview-details {
+            margin-left: 85px;
+            margin-right: 10px;
+
+            .post-title {
+                margin-top: 0;  
+                margin-bottom: 0;    
+                color: @darkblue;  
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .post-thumb {
+                height: 100px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+    

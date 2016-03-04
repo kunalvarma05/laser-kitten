@@ -1,0 +1,49 @@
+.cover() {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.cover {
+    .cover()
+}
+
+.loader {
+    overflow: hidden;
+    
+    i {
+        font-size: 300px;
+        position: absolute;
+        color: #011C26;
+        opacity: 0.1;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -180px;
+        overflow: hidden;
+    }
+}
+
+.vcenter() {
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+}
+
+.vcenter {
+    .vcenter()
+}
+
+
+.btn-orange {
+    background-color: @orange;
+    border-color: darken(@orange, 10%);
+    color: #fff;
+
+    &:hover, &:active, &:visited {
+        background-color: darken(@orange, 5%);
+        color: #fff;
+    }
+}

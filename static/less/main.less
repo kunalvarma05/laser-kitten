@@ -1,0 +1,111 @@
+
+@import "variables.less";
+@import "helpers.less";
+@import "sidebar.less";
+@import "content.less";
+@import "posts.less";
+@import "post.less";
+@import "collections.less";
+@import "users.less";
+@import "notifications.less";
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+a {
+	cursor: default !important;
+    text-decoration: none !important;
+}
+
+.fixed {
+    position: fixed;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    &-top {
+        top: 0 !important;
+    }
+
+    &-bottom {
+        bottom: 0 !important;
+    }
+}
+
+.scrollable {
+    overflow-y: auto;
+    // height: 100%;
+}
+
+.secondary-btns {
+    padding-top: 10px;
+    background-color: #eee;
+    text-align: center;
+    ul {
+        display: inline-block;
+
+        li {
+
+            &.active a {
+                color: @orange;
+                background-color: transparent;
+
+                &:hover, &:visited, &:active, &:focus {
+                    color: @orange;
+                    background-color: transparent;                        
+                }
+            }
+            a {
+                color: #575757;
+                text-transform: uppercase;
+
+                &:hover, &:visited, &:active, &:focus {
+                    color: @orange;
+                    background-color: transparent;                        
+                }
+
+                &.text-elipse {
+                    font-size: 7px;
+                    padding-top: 15px;
+                }
+
+
+                @media screen {
+                    @media (max-width: 450px) {
+                        padding: 10px 5px;
+                        font-size: 12px;
+
+                        &.text-elipse {
+                            font-size: 5px;
+                        }
+                    }                     
+                }
+            }
+        }
+
+    }
+} 
+
+.vote-btn {
+    border-radius: 5px;
+    background-color: #fff;
+    color: @darkgrey;
+    cursor: default !important;
+
+    .vote-up-arrow {
+        font-size: 16px;
+    }
+}
+
+
+.no-content {
+    color: @grey;
+    margin-top: 200px;
+    font-weight: 400;
+}

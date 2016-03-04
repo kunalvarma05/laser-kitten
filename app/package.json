@@ -1,0 +1,27 @@
+{
+  "name": "lazer-kittin",
+  "productName": "Lazer Kitten",
+  "identifier": "io.github.imns.lazer-kittin",
+  "description": "A Mac App for Product Hunt",
+  "version": "0.0.1",
+  "author": "Nate Smith",
+  "copyright": "© 2016, Nate Smith",
+  "main": "app.js",
+  "dependencies": {
+    "fs-jetpack": "^0.7.0",
+    "history": "^1.13.1",
+    "moment": "^2.10.6",
+    "node-notifier": "^4.4.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-infinite-scroll-mixin": "^0.2.0",
+    "react-router": "^1.0.0",
+    "reactify": "^1.1.1",
+    "reflux": "^0.3.0",
+    "superagent": "^1.4.0",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "postinstall": "node ../tasks/rebuild_native_modules"
+  }
+}

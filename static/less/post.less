@@ -1,0 +1,129 @@
+.post-filters {
+    position: absolute;
+    padding: 15px;
+    background-color: @white;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #f1f1f1;
+
+    a {
+        color: @darkgrey;
+        text-decoration: none;
+
+        &:hover {
+            color: @black;
+        }
+    }
+
+    .previous-day-btn {
+        position: absolute;
+        top: 15px;  
+        left: 15px;
+    }
+
+    .next-day-btn {
+        position: absolute;
+        top: 15px;  
+        right: 15px;
+    }
+
+    .posts-date {
+        margin: 0;
+    }
+}
+
+.filter-gap {
+    height: 50px;
+}
+
+.post-detail {
+
+    .post-img {
+        color: #fff;
+        height: 250px;
+        text-align: center;
+        border-top: none;
+        border-bottom: 1px solid @lightgrey;
+
+
+        .post-meta {
+
+            h1 {
+                font-size: 32px;
+                font-weight: 400;
+                margin: 0 0 5px 0;
+            }
+
+            .tagline {
+                font-size: 16px;
+                font-weight: 300;
+                margin: 0 10px 10px 10px;
+                line-height: 18px;
+            }
+
+
+            .vote-box {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+      
+    }
+
+    .made-by {
+        top: 220px;
+        right: 15px;
+        position: absolute;
+        color: #b3b3b3;
+
+        a {
+            color: #b3b3b3;
+            text-decoration: none;
+
+            &:hover, &:visited, &:active {
+                color: darken(@white, 20%);                  
+            }
+        }
+    }
+
+    // .add-to-collection {
+    //     top: 215px;
+    //     right: 15px;
+    //     position: absolute;
+    //     color: @white;
+    // } 
+
+    .post-secondary {
+        top: 250px !important;
+        height: 50px;
+    }
+
+    .post-content {
+        top: 300px !important;
+        bottom: 0;
+        overflow-x: hidden;
+    }
+
+    .post-comments {
+        padding: 0 35px;
+    }
+
+    .child-comment {
+        margin-left: 35px;
+    }
+
+    .post-media {
+        padding: 15px;
+
+        .media-item {
+            margin-bottom: 15px;
+
+            img {
+                display: inline-block;
+            }
+        }
+    }
+    
+}
