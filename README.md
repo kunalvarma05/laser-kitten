@@ -2,6 +2,8 @@ laser-kitten
 =============
 A Product Hunt app for the Mac
 
+![laser kitten screenshot](http://imns.github.io/img/laser-kitten/product-hunt-preview@1500.jpg)
+
 
 # Why?
 I wanted to build an Electron App with ReactJS.  I really like Product Hunt, but I only saw menubar apps available in the App store and I wanted something I could have sitting on my second monitor at all times.
