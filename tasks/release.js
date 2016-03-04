@@ -4,11 +4,9 @@ var gulp = require('gulp');
 var utils = require('./utils');
 
 var releaseForOs = {
-    osx: require('./release_osx'),
-    linux: require('./release_linux'),
-    windows: require('./release_windows'),
+    osx: require('./release_osx')
 };
 
-gulp.task('release', ['clean', 'cleanRelease', 'copy'], function () {
+gulp.task('release', ['copy'], function () {
     return releaseForOs[utils.os()]();
 });

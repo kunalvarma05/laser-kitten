@@ -130,8 +130,8 @@ var packToDmgFile = function () {
 };
 
 var cleanClutter = function () {
-    tmpDir.remove('.');
-    return projectDir.cwd('./build').removeAsync('.');
+    // return projectDir.cwd('./build').removeAsync('.');
+    return tmpDir.remove('.');
 };
 
 module.exports = function () {

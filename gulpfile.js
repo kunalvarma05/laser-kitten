@@ -74,6 +74,7 @@ gulp.task('browserify', function() {
     rebbuild();    
 });
 
+
 // -------------------------------------
 // LESS
 // -------------------------------------
@@ -136,7 +137,7 @@ var copyTask = function () {
     return true;
 };
 
-gulp.task('copyTask', copyTask);
+// gulp.task('copyTask', copyTask);
 
 
 // -------------------------------------
@@ -145,5 +146,5 @@ gulp.task('copyTask', copyTask);
 
 gulp.task('build', ['browserify', 'less']);
 gulp.task('clean', ['cleanBuild', 'cleanRelease']);
-gulp.task('copy', ['clean', 'copyTask']);
+gulp.task('copy', ['clean'], copyTask);
 gulp.task('default', ['build']);
