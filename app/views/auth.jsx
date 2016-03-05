@@ -89,9 +89,6 @@ module.exports = React.createClass({
         }
 
         if (code) {
-            // console.log('got the code: ' + code);
-            // console.log('Actions');
-            // console.log(Actions);
             AuthActions.login(code);
         } else if (error) {
             alert('Oops! Something went wrong and we couldn\'t ' +

@@ -5,12 +5,10 @@ var BrowserWindow = remote.require('browser-window');
 var React = require('react');
 
 var Actions = require('../../actions');
-// var AuthStore = require('../../stores/auth-store');
 
 var Login = React.createClass({
 
     componentWillMount: function() {
-        // Actions.getPost(this.props.params.id);
         console.log('Login is about to mount');
     },
 
@@ -70,7 +68,6 @@ var Login = React.createClass({
             console.log('got the code: ' + code);
             console.log(Actions);
             Actions.login(code);
-            // AuthStore.login(code);
         } else if (error) {
             alert('Oops! Something went wrong and we couldn\'t ' +
                 'log you in using Product Hunt. Please try again.');

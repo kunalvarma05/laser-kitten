@@ -25,10 +25,6 @@ module.exports = Reflux.createStore({
             });
         }
 
-        // var diffs = _.filter(json.post, function(obj) {
-        //     return !_.findWhere(this.posts, obj);
-        // }.bind(this));
-
         this.posts = json.posts;
         this.triggerChange();
     },

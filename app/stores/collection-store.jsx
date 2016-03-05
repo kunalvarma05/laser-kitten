@@ -1,5 +1,4 @@
 var Reflux = require('reflux');
-// var Api = require('../utils/api');
 var CollectionActions = require('../actions/collection-actions');
 var _ = require('underscore');
 var qs = require('querystring');

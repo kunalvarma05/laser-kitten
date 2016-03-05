@@ -41,11 +41,3 @@ PostActions.getNewPostsForToday.listen(function(day) {
 
 
 module.exports = PostActions;
-
-
-/*
-
-
-
-
- */

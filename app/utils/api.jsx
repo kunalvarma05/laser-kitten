@@ -1,4 +1,3 @@
-// var Fetch = require('whatwg-fetch');
 var request = require('superagent');
 var AuthStore = require('../stores/auth-store');
 
@@ -82,7 +81,6 @@ var API = {
         var self = this;
         return this.getToken()
             .then(function(accessToken) {
-                console.log('toke is '+accessToken)
                 var promise = new Promise(function(resolve, reject) {
                     request
                         .get(config.rootUrl + url)

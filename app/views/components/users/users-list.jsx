@@ -2,14 +2,7 @@ var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 
-// var PostStore = require('../../../stores/post-store');
-
-// var InfiniteScrollMixin = require('../../mixins/infinite-scroll');
-
 module.exports = React.createClass({
-    // mixins: [
-    //     InfiniteScrollMixin('.users-list', PostStore, 'handleLoadMore'),
-    // ],
     render: function() {
         return <div className="users-list">
             {this.props.users ? this.renderUsers() : null}

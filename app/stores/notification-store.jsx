@@ -8,8 +8,6 @@ module.exports = Reflux.createStore({
         this.triggerChange();
     },
     onGetNotificationsFailed: function(json) {
-        // this.notifications = json.notifications;
-        // this.triggerChange();
     },
     triggerChange: function() {
         this.trigger('change', this.notifications);

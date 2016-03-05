@@ -73,8 +73,4 @@ app.on('ready', function() {
 
     require('./app-menu')(mainWindow, DEBUG);
 
-
-    
-
-
 });
