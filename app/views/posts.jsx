@@ -106,7 +106,7 @@ module.exports = React.createClass({
     renderFeaturedFilters: function() {
         return <div>
             {this.renderPreviousDay()}
-            <h5 className="text-center posts-date">{this.getPrettyDate(this.getToday())}</h5>
+            <h5 className="text-center posts-date">{this.getPrettyDate(this.state.currentDay)}</h5>
             {this.renderNextDay()}
         </div>
     },
