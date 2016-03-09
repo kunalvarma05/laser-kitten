@@ -1,3 +1,4 @@
+var app = require('app');
 var Menu = require('menu');
 var MenuItem = require('menu-item');
 
@@ -7,9 +8,9 @@ module.exports = function(mainWindow, DEBUG) {
     // https://github.com/atom/electron/blob/master/atom/browser/default_app/default_app.js
     if (process.platform == 'darwin') {
         var template = [{
-            label: 'Product Hunt',
+            label: 'Laser Kitten',
             submenu: [{
-                label: 'Hide Product Hunt',
+                label: 'Hide Laser Kitten',
                 accelerator: 'Command+H',
                 selector: 'hide:'
             }, {
@@ -111,7 +112,7 @@ module.exports = function(mainWindow, DEBUG) {
         // });
 
         // var template = [{
-        //     label: 'Product Hunt',
+        //     label: 'Laser Kitten',
         //     submenu: [cut, copy, paste]
         // }];
         

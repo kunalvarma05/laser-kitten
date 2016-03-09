@@ -17,7 +17,7 @@ module.exports = React.createClass({
                 <Link to={"/user/" + comment.user.id}>
                     <h5>{comment.user.name} <small>{comment.user.headline}</small></h5>
                 </Link>
-                <p>{comment.body}</p>
+                <p> <div dangerouslySetInnerHTML={{__html: comment.body}}></div></p>
                 {comment.child_comments.length > 0 ? this.renderChildComments(comment.child_comments) : null}
                 <hr />
             </div>

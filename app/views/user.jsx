@@ -51,7 +51,7 @@ module.exports = React.createClass({
         AppActions.selectView("user");
     },
     render: function() {
-        if(!this.state.isAuth) {
+        if(!this.state.isAuth && !this.props.params.id) {
             return <Login />
         }
 

@@ -2,8 +2,8 @@
 
     TODO
     ======================================
-    - Previous Post Day always says Today
-    - If you aren't signed in and click on a users name it won't let you view it
+    + Previous Post Day always says Today
+    + If you aren't signed in and click on a users name it won't let you view it
     - Allow HTML in Comments and auto convert links to be clickable
     - Max media size
     - Add about page
