@@ -1,0 +1,30 @@
+
+
+body {
+    background-color: #EEEEEE;
+}
+
+
+.header, .footer {
+    min-height: 100px;
+}
+
+.block {
+    min-height: 300px;
+}
+
+.black {
+    background-color: #0D0D0D;    
+}
+
+.blue {
+    background-color: #E8EBF0;
+}
+
+.gray {
+    background-color: #EEEEEE;
+}
+
+.white {
+    background-color: #FFFFFF;
+}

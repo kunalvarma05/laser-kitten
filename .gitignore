@@ -1,4 +1,6 @@
-dev/
+dev.js
+
+node_modules/
 
 # Created by https://www.gitignore.io/api/sublimetext,osx
 
