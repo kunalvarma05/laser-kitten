@@ -1,6 +1,6 @@
 {
   "name": "laser-kitten-dev-dependencies",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Laser Kitten Dev Dependencies",
   "main": "app.js",
   "scripts": {

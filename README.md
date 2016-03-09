@@ -10,7 +10,7 @@ I wanted to build an Electron App with ReactJS.  I really like Product Hunt, but
 
 
 # Download
-Download the latest version [here](https://github.com/imns/laser-kitten/releases/download/v0.0.1-alpha/lazer-kittin_0.0.1.dmg.zip)
+Download the latest version [here](https://github.com/imns/laser-kitten/releases/download/v0.0.2-alpha/lazer-kittin_0.0.2.dmg.zip)
 
 
 # Stack
