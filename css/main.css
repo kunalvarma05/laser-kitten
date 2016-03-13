@@ -2,19 +2,65 @@
 
 body {
     background-color: #EEEEEE;
+    font-family: 'Open Sans', sans-serif;
 }
-
 
 .header, .footer {
     min-height: 100px;
 }
 
+.footer {
+    padding: 35px;
+    color: #f1f1f1;
+}
+
+.nav-links {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 35px;
+}
+
+.nav-links  a {
+    color: #E8EBF0;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.wrap {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.hook {
+    padding: 55px 55px 0 55px;
+}
+
+.hook h1 {
+    font-size: 54px;
+}
+
+.screenshots {
+    border-top: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
 .block {
     min-height: 300px;
+    padding: 75px 0;
+}
+
+.block img {
+    display: inline-block;
+    max-height: 600px;
 }
 
 .black {
-    background-color: #0D0D0D;    
+    background-color: #001C27;    
 }
 
 .blue {
