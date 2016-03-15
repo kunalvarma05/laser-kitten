@@ -70,6 +70,28 @@ body {
     padding: 35px 0;
 }
 
+.faq h2 {
+    font-size: 44px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.42);
+}
+
+.faq p {
+    margin: 0 0 55px 0;
+    font-size: 26px;
+    line-height: 1.5em;
+    font-weight: 100;
+    background: rgba(244, 244, 244, 0.6);
+    padding: 30px 40px;
+    border-radius: 3px;
+    text-align: left;
+    box-shadow: 0 40px 240px rgba(140, 140, 140, 0.29), 0 2px 5px #e3e3e3;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(179, 179, 179, 0.63);
+}
+
 .black {
     background-color: #001C27;    
 }
