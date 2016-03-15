@@ -26,11 +26,15 @@ body {
     padding: 0 35px;
 }
 
-.nav-links  a {
+.nav-links a {
     color: #E8EBF0;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #b3b3b3;
 }
 
 .main {
@@ -106,4 +110,15 @@ body {
 
 .white {
     background-color: #FFFFFF;
+}
+
+
+
+.btn-primary {
+    background-color: #0075A3 !important;
+    border-color: #0075A3 !important;
+}
+
+.btn-default {
+    background-color: #f1f1f1 !important;
 }
