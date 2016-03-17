@@ -5,6 +5,30 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    color: #0075A3;
+}
+
+
+.product-hunt {
+    background-color: #DA552F;
+    color: #fff;
+    padding: 15px 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.product-hunt h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.product-hunt a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .header, .footer {
     min-height: 100px;
 }
@@ -38,7 +62,7 @@ body {
 }
 
 .main {
-    margin-top: 100px;
+    margin-top: 125px;
     margin-bottom: 100px;
 }
 
@@ -75,6 +99,7 @@ body {
 }
 
 .faq h2 {
+    color: #001C27;
     font-size: 44px;
     font-weight: 900;
     font-style: italic;
@@ -96,12 +121,18 @@ body {
     border-bottom: 1px solid rgba(179, 179, 179, 0.63);
 }
 
-.black {
+.social {
+    padding-top: 10px;
+}
+
+
+/* Colors */
+.darkblue {
     background-color: #001C27;    
 }
 
 .blue {
-    background-color: #E8EBF0;
+    background-color: #E6E9EE;
 }
 
 .gray {
@@ -113,7 +144,7 @@ body {
 }
 
 
-
+/* Bootstrap Overrides */
 .btn-primary {
     background-color: #0075A3 !important;
     border-color: #0075A3 !important;
