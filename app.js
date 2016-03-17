@@ -17,10 +17,12 @@
 var app = require('app');
 var BrowserWindow = require('browser-window');
 var ipc = require('ipc');
+var shell = require('shell');
+var windowStateKeeper = require('electron-window-state');
 
 
 // ********************************** //
-var DEBUG = false;
+var DEBUG = true;
 // ********************************** //
 
 
@@ -39,17 +41,24 @@ app.on('window-all-closed', function() {
 
 app.on('ready', function() {
 
+    var mainWindowState = windowStateKeeper({
+        defaultWidth: 400,
+        defaultHeight: 700
+      });
+
     mainWindow = new BrowserWindow({
-        width: 400,
-        height: 700,
+        'x': mainWindowState.x,
+        'y': mainWindowState.y,
+        'width': mainWindowState.width,
+        'height': mainWindowState.height,
         'min-width': 350,
         'max-width': maxWith,
         'min-height': 400,
         'web-preferences': {
             'web-security': false
         },
-        autoHideMenuBar: true,
-        useContentSize: true
+        'autoHideMenuBar': true,
+        'useContentSize': true
     });
     if (DEBUG) {
         mainWindow.maxWidth = 4000;
@@ -62,6 +71,7 @@ app.on('ready', function() {
 
     mainWindow.on('closed', function() {
         mainWindow = null;
+        app.quit();
     });
 
     // Custom Events
@@ -69,8 +79,18 @@ app.on('ready', function() {
         mainWindow.setTitle(title);
     });
 
+    // maintain window state
+    mainWindowState.manage(mainWindow);
 
-
+    // app menu
     require('./app-menu')(mainWindow, DEBUG);
+
+
+
+
+    // ABOUT WINDOW
+    ipc.on('open-about-window', function(e, title) {
+        shell.openExternal('https://imns.github.io/laser-kitten');
+    });
 
 });

@@ -67,6 +67,16 @@
 .sidebar .nav a i {
   font-size: 24px;
 }
+.sidebar .about {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+.sidebar .about a {
+  color: #02435A;
+  font-size: 16px;
+}
 .main {
   position: absolute;
   top: 0;

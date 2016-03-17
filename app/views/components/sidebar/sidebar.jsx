@@ -20,31 +20,39 @@ module.exports = React.createClass({
     },
     render: function() {
         var currentView = this.state.currentView;
-        return  <ul className="unstyled-list nav">
-        	<li>
-                <Link to="/" data-view="home" className={currentView == 'home' ? 'active' : ''}>
-                    <i className="fa fa-home"></i>
-                </Link>
-            </li>
-        	<li>
-                <Link to="/collections" data-view="collections" className={currentView == 'collections' ? 'active' : ''}>
-                    <i className="fa fa-th-list"></i>
-                </Link>
-            </li>
-        	{this.state.isAuth ? this.renderNotifcations() : null}
-        	<li>
-                <Link to="/user" data-view="user" className={currentView == 'user' ? 'active' : ''} >
-                    <i className="fa fa-user"></i>
-                </Link>
-            </li>
-            {/* 
-        	<li>
-                <Link to="/search" data-view="search" className={currentView == 'search' ? 'active' : ''}>
-                    <i className="fa fa-search"></i>
-                </Link>
-            </li>
-            */}
-        </ul>
+        return  <div>
+            <ul className="unstyled-list nav">
+                <li>
+                    <Link to="/" data-view="home" className={currentView == 'home' ? 'active' : ''}>
+                        <i className="fa fa-home"></i>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/collections" data-view="collections" className={currentView == 'collections' ? 'active' : ''}>
+                        <i className="fa fa-th-list"></i>
+                    </Link>
+                </li>
+                {this.state.isAuth ? this.renderNotifcations() : null}
+                <li>
+                    <Link to="/user" data-view="user" className={currentView == 'user' ? 'active' : ''}>
+                        <i className="fa fa-user"></i>
+                    </Link>
+                </li>
+                {/* 
+                <li>
+                    <Link to="/search" data-view="search" className={currentView == 'search' ? 'active' : ''}>
+                        <i className="fa fa-search"></i>
+                    </Link>
+                </li>
+                */}
+            </ul>
+
+            <div className="about">
+                <a href="#" title="About Laser Kitten" onClick={this.handleAboutClick}>
+                    <i className="fa fa-question-circle"></i>
+                </a>
+            </div>
+        </div>
     },
     renderNotifcations: function() {
         return <li>
@@ -82,6 +90,10 @@ module.exports = React.createClass({
         }
 
         ipc.send('set-window-title', title);            
+    },
+    handleAboutClick: function(e) {
+        e.preventDefault();
+        ipc.send('open-about-window');
     },
     onAuthChange: function(e, isAuth) {
         this.setState({
