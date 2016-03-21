@@ -160,7 +160,75 @@ a {
 }
 
 
-@media all and (min-width: 420px) {
+@media all and (max-width: 760px) {
+    .product-hunt h3 {
+        font-size: 20px;
+    }
+
+    .github-banner {
+        display: none !important;
+    }
+
+    .logo {
+        line-height: 0;
+        padding: 10px 0;
+        text-align: center;
+        float: none !important;
+    }
+
+    .nav-links {
+        height: auto;
+        line-height: 0;
+        padding: 15px 0;
+        text-align: center;
+        float: none !important;
+    }
+
+    .block {
+        padding: 15px 0;
+    }
+
+    .hook {
+        padding: 15px 35px 0 35px;
+    }
+
+    .btn-primary {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .btn-default {
+        display: block;
+    }
+
+    .screenshots {
+        display: none;
+    }
+
+    .faq {
+        background-color: #E6E9EE;
+    }
 
 
+    .faq h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .faq p {
+        font-size: 16px;
+        padding: 20px 30px;
+        margin-bottom: 35px;
+    }
+
+    .copyright, .social {
+        float: none !important;
+        text-align: center;
+    }
+
+    .social {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+    }
 }
