@@ -20,8 +20,13 @@ a {
 }
 
 .product-hunt h3 {
+    color: #fff;
     font-size: 28px;
     margin-top: 0;
+}
+
+.product-hunt .small {
+    color: #fff;
 }
 
 .product-hunt a {
@@ -152,4 +157,10 @@ a {
 
 .btn-default {
     background-color: #f1f1f1 !important;
+}
+
+
+@media all and (min-width: 420px) {
+
+
 }
