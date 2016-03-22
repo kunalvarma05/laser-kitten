@@ -22,7 +22,7 @@ var windowStateKeeper = require('electron-window-state');
 
 
 // ********************************** //
-var DEBUG = true;
+var DEBUG = false;
 // ********************************** //
 
 
