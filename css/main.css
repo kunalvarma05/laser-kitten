@@ -160,7 +160,7 @@ a {
 }
 
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 768px) {
     .product-hunt h3 {
         font-size: 20px;
     }
